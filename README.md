@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Run `bundle install`
 
-Things you may want to cover:
+Run `rails s` to start server on http://localhost:3000/
 
-* Ruby version
+Post readings via HTTP POST requests to /readings?device_id={device_id}
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+I ran out of time to implement tests. I think it may have made more sense to structure the API as `/devices/:id/readings` but given the time limit and that requirements center on the readings, I chose the current structure.
